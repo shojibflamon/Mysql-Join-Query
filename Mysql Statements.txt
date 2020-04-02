@@ -1,0 +1,55 @@
+### MYSQL INNER JOIN
+SELECT CONCAT(customer.firstname, ' ', customer.lastname) as Name,
+       customer_order.payment_method,
+       customer_order.total                               as Amount,
+       customer_order.currency_code,
+       customer_order.date_added
+from customer
+         JOIN customer_order on customer.id = customer_order.customer_id
+		 
+		 
+		 
+
+### MYSQL LEFT JOIN		 
+SELECT CONCAT(customer.firstname, ' ', customer.lastname) as Name,
+       customer_order.payment_method,
+       customer_order.total                               as Amount,
+       customer_order.currency_code,
+       customer_order.date_added
+from customer
+         Left JOIN customer_order on customer.id = customer_order.customer_id
+		 
+		 
+		 
+		 
+### MYSQL RIGHT JOIN
+SELECT CONCAT(customer.firstname, ' ', customer.lastname) as Name,
+       customer_order.payment_method,
+       customer_order.total                               as Amount,
+       customer_order.currency_code,
+       customer_order.date_added
+from customer
+         JOIN customer_order on customer.id = customer_order.customer_id
+		 
+		 
+		 
+		 
+### MYSQL OUTER JOIN
+SELECT CONCAT(customer.firstname, ' ', customer.lastname) as Name,
+       customer_order.payment_method,
+       customer_order.total                               as Amount,
+       customer_order.currency_code,
+       customer_order.date_added
+from customer
+         Left JOIN customer_order on customer.id = customer_order.customer_id
+
+UNION
+
+
+SELECT CONCAT(customer.firstname, ' ', customer.lastname) as Name,
+       customer_order.payment_method,
+       customer_order.total                               as Amount,
+       customer_order.currency_code,
+       customer_order.date_added
+from customer
+         right JOIN customer_order on customer.id = customer_order.customer_id
