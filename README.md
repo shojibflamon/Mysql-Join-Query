@@ -1,7 +1,7 @@
 # Mysql-Join-Query
 Practice about MySql Join Query
 
-MySql Join (Inner)
+MySql Join (Inner): 
   SELECT column_name(s)
   FROM table1
   JOIN table2 ON 
@@ -9,7 +9,7 @@ MySql Join (Inner)
   
   
   
-MySql LEFT JOIN (OUTER)
+MySql LEFT JOIN (OUTER):
   SELECT column_name(s)
   FROM table1
   LEFT JOIN table2 ON 
@@ -17,7 +17,7 @@ MySql LEFT JOIN (OUTER)
   
   
   
-MySql RIGHT JOIN (OUTER)
+MySql RIGHT JOIN (OUTER):
   SELECT column_name(s)
   FROM table1
   RIGHT JOIN table2 ON 
@@ -25,7 +25,7 @@ MySql RIGHT JOIN (OUTER)
   
   
   
-MySql FULL JOIN (OUTER)
+MySql FULL JOIN (OUTER):
   SELECT column_name(s)
   FROM table1
   LEFT JOIN table2 ON 
